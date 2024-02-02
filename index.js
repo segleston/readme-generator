@@ -5,6 +5,41 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
 const questions = [
+    {
+        type: 'input',
+        name: 'title',
+        message: "What is your project title?"
+    },
+    {
+        type: 'input',
+        name: 'description',
+        message: "Please enter a description of your application:"
+    },
+    {
+        type: 'input',
+        name: 'installation',
+        message: "Please enter the installation instructions:"
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: "Please enter the usage information?"
+    },
+    {
+        type: 'input',
+        name: 'contribution',
+        message: "What are the contribution guidelines?"
+    },
+    {
+        type: 'input',
+        name: 'test',
+        message: "What are the test instructions?"
+    },
+    {
+        type: 'input',
+        name: 'license',
+        message: "What is your project title?"
+    },
 
 ];
 

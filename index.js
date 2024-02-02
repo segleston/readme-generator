@@ -1,7 +1,9 @@
 const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown");
+const generateMarkdown = require("../utils/generateMarkdown");
+
+
 
 // array of questions for user
 const questions = [
@@ -53,10 +55,11 @@ const questions = [
     }
 ];
 
-// function to write README file
-function writeToFile(fileName, data) {
+const readME = (answers) =>
     `# ${data.title}
+
     ## Description 
+    ${data.description}
 
     ## Table of Contents: //Links linking to the different areas in the readme
     - [Description](#Description)
@@ -67,23 +70,31 @@ function writeToFile(fileName, data) {
     - [Questions & Contact Info](#Questions)
     - [License](#License)
 
-## Installation Instructions 
+    ## Installation Instructions 
+    ${data.installation}
 
-## Usage Information 
+    ## Usage Information 
+    ${data.usage}
 //List of options - adds badge to top and details underneath
 
-## Test and Deploy
+    ## Test and Deploy
+    ${data.test}
 
-## Contributing
+    ## Contributing
+    ${data.contributing}
 
-## Questions 
+    ## Questions 
 
-- [GitHub](https://www.github.com/${data.github})
-- If you have any further questions, please don't hesitate to [email me](mailto:${data.email})
+    If you have any further questions, please don't hesitate to contact me:
+    - [GitHub](https://www.github.com/${data.github})
+    - [Email me](mailto:${data.email})
 
-## License`
+    ## License
+    ${data.license}`
 
-`[Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/)`
+// function to write README file
+function writeToFile(fileName, data) {
+    
 }
 
 // function to initialize program

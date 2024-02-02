@@ -2,6 +2,8 @@
 function generateMarkdown(answers) {
   return `# ${answers.title}
 
+  ${setLicense(answers.license)}
+
   ## Description 
   ${answers.description}
 
@@ -40,4 +42,13 @@ function generateMarkdown(answers) {
 }
 
 module.exports = generateMarkdown;
+
+
+function setLicense(license) {
+  if (license === 'None') {
+    return ""
+  } else {
+    return `[![License](https://img.shields.io/badge/License-${license}-blue.svg)]`
+  }
+}
 

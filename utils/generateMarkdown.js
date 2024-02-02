@@ -5,6 +5,7 @@ function generateMarkdown(answers) {
   ${setLicenseBadge(answers.license)}
 
   ## Description 
+  
   ${answers.description}
 
   ## Table of Contents: 
@@ -17,25 +18,32 @@ function generateMarkdown(answers) {
   - [License](#License)
 
   ## Installation
+  
   ${answers.installation}
 
   ## Usage 
+  
   ${answers.usage}
 
 
   ## Test
+  
   N/A
 
   ## Contributing
+  
   ${answers.contributing}
 
   ## Questions 
 
   If you have any further questions, please don't hesitate to contact me:
+  
   - [GitHub](https://www.github.com/${answers.github})
+  
   - [Email me](mailto:${answers.email})
 
   ## License
+  
   ${answers.license}`
 
 ;

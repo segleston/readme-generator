@@ -7,21 +7,21 @@ function generateMarkdown(answers) {
 
   ## Table of Contents: 
   - [Description](#Description)
-  - [Installation Instructions](#Installation Instructions)
-  - [Usage Information](#Usage Information) 
+  - [Installation Instructions](#Installation)
+  - [Usage Information](#Usage) 
   - [Contributing Guidelines](#Contributing)
-  - [Test Instructions](#Test and Deploy) 
+  - [Test Instructions](#Test) 
   - [Questions & Contact Info](#Questions)
   - [License](#License)
 
-  ## Installation Instructions 
+  ## Installation
   ${answers.installation}
 
-  ## Usage Information 
+  ## Usage 
   ${answers.usage}
 
 
-  ## Test and Deploy
+  ## Test
   N/A
 
   ## Contributing

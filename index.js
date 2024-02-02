@@ -1,12 +1,12 @@
 const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
-const generateMarkdown = require("../utils/generateMarkdown");
+const util = require('util');
+const generateMarkdown = require("./utils/generateMarkdown");
+const writeFileAsync = util.promisify(fs.writeFile);
 
-
-
-// array of questions for user
-const questions = [
+const promptUser = () =>
+  inquirer.prompt([
     {
         type: 'input',
         name: 'title',
@@ -33,14 +33,9 @@ const questions = [
         message: "What are the contribution guidelines?"
     },
     {
-        type: 'input',
-        name: 'test',
-        message: "What are the test instructions?"
-    },
-    {
         type: 'list',
         name: 'license',
-        message: "What is your project title?",
+        message: "What license would you like for your project?",
         choices:  ['MIT','GPLv2','LGPLv3']
     },
     {
@@ -53,54 +48,28 @@ const questions = [
         name: 'email',
         message: "What is your email address?"
     }
-];
+]);
+// // array of questions for user
+// const questions = [
+// ];
 
-const readME = (answers) =>
-    `# ${data.title}
+    promptUser() 
+    .then((answers) => writeFileAsync('output/README.md', generateMarkdown(answers)))
+    .then(() => console.log('Successfully wrote to readME'))
+    .catch((err) => console.error(err));
 
-    ## Description 
-    ${data.description}
-
-    ## Table of Contents: //Links linking to the different areas in the readme
-    - [Description](#Description)
-    - [Installation Instructions](#Installation Instructions)
-    - [Usage Information](#Usage Information) 
-    - [Contributing Guidelines](#Contributing)
-    - [Test Instructions](#Test and Deploy) 
-    - [Questions & Contact Info](#Questions)
-    - [License](#License)
-
-    ## Installation Instructions 
-    ${data.installation}
-
-    ## Usage Information 
-    ${data.usage}
-//List of options - adds badge to top and details underneath
-
-    ## Test and Deploy
-    ${data.test}
-
-    ## Contributing
-    ${data.contributing}
-
-    ## Questions 
-
-    If you have any further questions, please don't hesitate to contact me:
-    - [GitHub](https://www.github.com/${data.github})
-    - [Email me](mailto:${data.email})
-
-    ## License
-    ${data.license}`
-
-// function to write README file
-function writeToFile(fileName, data) {
+// // function to write README file
+// function writeToFile(fileName, data) {
     
-}
+// }
 
-// function to initialize program
-function init() {
+// // function to initialize program
+// function init() {
 
-}
+// }
 
-// function call to initialize program
-init();
+// // function call to initialize program
+// init();
+
+
+// // output/readme.md

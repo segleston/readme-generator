@@ -44,7 +44,7 @@ function generateMarkdown(answers) {
 
   ## Contributing
   
-  ${answers.contributing}
+  ${answers.contribution}
 
   ## Questions 
 

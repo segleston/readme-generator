@@ -1,10 +1,12 @@
-# Generate a README
+# readme project
 
   ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 
   ## Description 
   
-  This project is to generate a README.md file based on user input. The user will be asked questions in the terminal regarding what information they would like to see in their generated README, and this data will be used to populate a README.md file.
+  project to generate readme
+  
+  - [Application repo](test)
 
   ## Table of Contents: 
   - [Description](#Description)
@@ -17,16 +19,19 @@
 
   ## Installation
   
-  Open vscode, open terminal, run 'node index.js', answer questions, readme will be created in the 'output' path.
+  open in terminal, run 'node index.js', answer questions
 
-  ## Usage
+  ## Usage 
   
-  This can be used to create README files to use with GitHub projects.
-
+  used to generate readme
 
   ## Test
   
   N/A
+
+  ## Contributing
+  
+  please contact me
 
   ## Questions 
 

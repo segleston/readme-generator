@@ -16,8 +16,6 @@ function generateMarkdown(answers) {
   ## Description 
   
   ${answers.description}
-
-  - [Deployed application](${answers.deployment})
   
   - [Application repo](${answers.repo})
 

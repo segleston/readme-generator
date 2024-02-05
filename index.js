@@ -51,11 +51,6 @@ const promptUser = () =>
     },
     {
         type: 'input',
-        name: 'deployment',
-        message: "Please enter your deployed applications URL:"
-    },
-    {
-        type: 'input',
         name: 'repo',
         message: "Please enter your applications repo URL:"
     }

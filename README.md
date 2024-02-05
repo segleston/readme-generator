@@ -46,6 +46,13 @@
   
   - [Email me](mailto:sarah.c.egleston@gmail.com)
 
+  ## Credits:
+
+  - Chris Kratz TA
+  - [Youtube](https://www.youtube.com)
+  - [NPM](https://www.npmjs.com/)
+
+
   ## License
   
   MIT

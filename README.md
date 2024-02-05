@@ -23,9 +23,9 @@
   - Run in integrated terminal. 
   - Run 'node index.js'.
   - Answer questions.
-  ![alt text](./images/Screenshot%202024-02-05%20at%2011.23.13.png)
+  ![screenshot of vscode questions](./images/Screenshot%202024-02-05%20at%2011.23.13.png)
   - Readme will be created in the 'output' path.
-  ![alt text](./images/Screenshot%202024-02-05%20at%2011.22.54.png)
+  ![screenshot of vscode](./images/Screenshot%202024-02-05%20at%2011.22.54.png)
 
 
 

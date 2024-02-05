@@ -6,6 +6,8 @@
   
   This project is to generate a README.md file based on user input. The user will be asked questions in the terminal regarding what information they would like to see in their generated README, and this data will be used to populate a README.md file.
 
+  - [Link to Video](https://youtu.be/YSFQfTJIQ6Y)
+
   ## Table of Contents: 
   - [Description](#Description)
   - [Installation Instructions](#Installation)
@@ -17,7 +19,15 @@
 
   ## Installation
   
-  Open vscode, open terminal, run 'node index.js', answer questions, readme will be created in the 'output' path.
+  - Open vscode. 
+  - Run in integrated terminal. 
+  - Run 'node index.js'.
+  - Answer questions.
+  ![alt text](./images/Screenshot%202024-02-05%20at%2011.23.13.png)
+  - Readme will be created in the 'output' path.
+  ![alt text](./images/Screenshot%202024-02-05%20at%2011.22.54.png)
+
+
 
   ## Usage
   

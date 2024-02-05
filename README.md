@@ -51,6 +51,7 @@
   - Chris Kratz TA
   - [Youtube](https://www.youtube.com)
   - [NPM](https://www.npmjs.com/)
+  - Bobbi Tarkany - Tutor
 
 
   ## License

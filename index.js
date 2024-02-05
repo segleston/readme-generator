@@ -37,7 +37,7 @@ const promptUser = () =>
         type: 'list',
         name: 'license',
         message: "Please choose a license for your project:",
-        choices:  ['MIT','GPLv2','LGPLv3', 'None']
+        choices:  ['MIT','GPL_v2','GPLv3', 'None']
     },
     {
         type: 'input',
@@ -53,6 +53,6 @@ const promptUser = () =>
 
 
     promptUser() 
-    .then((answers) => writeFileAsync('README.md', generateMarkdown(answers)))
-    .then(() => console.log('Successfully created README'))
+    .then((answers) => writeFileAsync('./output/GeneratedREADME.md', generateMarkdown(answers)))
+    .then(() => console.log('Successfully generated README'))
     .catch((err) => console.error(err));

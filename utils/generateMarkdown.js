@@ -1,3 +1,12 @@
+
+function setLicenseBadge(license) {
+  if (license === 'None') {
+    return ""
+  } else {
+    return `![License](https://img.shields.io/badge/License-${license}-blue.svg)`
+  }
+}
+
 // function to generate markdown for README
 function generateMarkdown(answers) {
   return `# ${answers.title}
@@ -25,7 +34,6 @@ function generateMarkdown(answers) {
   
   ${answers.usage}
 
-
   ## Test
   
   N/A
@@ -49,14 +57,11 @@ function generateMarkdown(answers) {
 ;
 }
 
+
+
+
 module.exports = generateMarkdown;
 
 
-function setLicenseBadge(license) {
-  if (license === 'None') {
-    return ""
-  } else {
-    return `![License](https://img.shields.io/badge/License-${license}-blue.svg)`
-  }
-}
+
 
